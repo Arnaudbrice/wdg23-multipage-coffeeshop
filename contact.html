@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arnaud's Coffee Shop</title>
+
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li>
+            <a href="/" class="logo">
+              <img src="logo.png" alt="My Website Logo" class="logo__image" />
+            </a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <h1><i class="fa-solid fa-mug-saucer"></i> Arnaud's Coffee Shop</h1>
+      <p>Where Quality Meets Every Sip!</p>
+    </header>
+
+    <main>
+      <section class="contact-info" aria-labelledby="contact-intro">
+        <h2 id="contact-intro" class="contact-info__title">
+          Our Contact Information
+        </h2>
+        <p class="contact-info__text">
+          We're always happy to hear from you! Feel free to reach out to us with
+          any questions or comments.
+        </p>
+        <address class="contact-info__address">
+          <ul>
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:mephisteur@gmail.com">mephisteur@gmail.com</a>
+            </li>
+            <li>
+              <strong>Phone:</strong>
+              <a href="tel:+33682961234">+33682961234</a>
+            </li>
+            <li>
+              <strong>Address:</strong>
+              <a href="https://maps.app.goo.gl/Ly2WACRrW6WDbesr7">
+                Arnaudstraße 34, 28832 Achim
+              </a>
+            </li>
+          </ul>
+        </address>
+      </section>
+
+      <section class="contact-image">
+        <img
+          src="./contact-us.jpg"
+          width="100%"
+          alt="Photo by Chevanon Photography: https://www.pexels.com/photo/person-performing-coffee-art-302899/"
+        />
+      </section>
+
+      <section class="contact" aria-labelledby="contact-form-title">
+        <h2 id="contact-form-title">
+          Get in touch with us
+        </h2>
+
+        <form action="#" class="contact__form">
+          <div class="form-group">
+            <label for="name" class="contact__label">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="contact__input"
+              autocomplete="name"
+              placeholder="Name goes here ..."
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="contact__label">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="contact__input"
+              autocomplete="email"
+              placeholder="Email goes here ..."
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="contact__label">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              class="contact__textarea"
+              cols="30"
+              rows="5"
+              placeholder="Message goes here ..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group form-group__full-width">
+            <button class="contact__button" type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        ©2025 Arnaud's Coffee Shop created with ❤️ by Brice Arnaud Habenicht
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1750106982102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750109297149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,15 @@\n     <link rel=\"stylesheet\" type=\"text/css\" href=\"./style.css\" />\n   </head>\n   <body>\n     <header>\n-      <p>☕️logo</p>\n+      <p>\n+        <a href=\"/\" class=\"logo\">\n+          <img src=\"logo.png\" alt=\"Meine Website Logo\" class=\"logo__image\" />\n+          <span class=\"logo__text\">MeinName.dev</span>\n+        </a>\n+      </p>\n+\n       <nav aria-label=\"Main navigation\">\n         <ul>\n           <li><a href=\"index.html\" aria-current=\"page\">Home</a></li>\n           <li><a href=\"about.html\">About us</a></li>\n"
+                },
+                {
+                    "date": 1750109525070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <header>\n       <p>\n         <a href=\"/\" class=\"logo\">\n           <img src=\"logo.png\" alt=\"Meine Website Logo\" class=\"logo__image\" />\n-          <span class=\"logo__text\">MeinName.dev</span>\n+          <span class=\"logo__text\">Coffee Shop</span>\n         </a>\n       </p>\n \n       <nav aria-label=\"Main navigation\">\n"
+                },
+                {
+                    "date": 1750109546659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n     <header>\n       <p>\n         <a href=\"/\" class=\"logo\">\n           <img src=\"logo.png\" alt=\"Meine Website Logo\" class=\"logo__image\" />\n-          <span class=\"logo__text\">Coffee Shop</span>\n         </a>\n       </p>\n \n       <nav aria-label=\"Main navigation\">\n"
+                },
+                {
+                    "date": 1750110513434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   <head>\n     <meta charset=\"UTF-8\" />\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n     <title>Arnaud's Coffee Shop</title>\n-\n+    <link rel=\"icon\" href=\"./favicon.ico\" />\n     <link rel=\"stylesheet\" type=\"text/css\" href=\"./style.css\" />\n   </head>\n   <body>\n     <header>\n"
+                },
+                {
+                    "date": 1750110575130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   <head>\n     <meta charset=\"UTF-8\" />\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n     <title>Arnaud's Coffee Shop</title>\n-    <link rel=\"icon\" href=\"./favicon.ico\" />\n+    <link rel=\"icon\" href=\"./favicon.png\" />\n     <link rel=\"stylesheet\" type=\"text/css\" href=\"./style.css\" />\n   </head>\n   <body>\n     <header>\n"
+                },
+                {
+                    "date": 1750110594552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   <head>\n     <meta charset=\"UTF-8\" />\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n     <title>Arnaud's Coffee Shop</title>\n-    <link rel=\"icon\" href=\"./favicon.png\" />\n+    <link rel=\"icon\" type=\"image/png\" href=\"./favicon.png\" />\n     <link rel=\"stylesheet\" type=\"text/css\" href=\"./style.css\" />\n   </head>\n   <body>\n     <header>\n"
+                },
+                {
+                    "date": 1750110716241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   <body>\n     <header>\n       <p>\n         <a href=\"/\" class=\"logo\">\n-          <img src=\"logo.png\" alt=\"Meine Website Logo\" class=\"logo__image\" />\n+          <img src=\"logo.png\" alt=\"My Website Logo\" class=\"logo__image\" />\n         </a>\n       </p>\n \n       <nav aria-label=\"Main navigation\">\n"
+                },
+                {
+                    "date": 1750110857068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,13 @@\n     <meta charset=\"UTF-8\" />\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n     <title>Arnaud's Coffee Shop</title>\n     <link rel=\"icon\" type=\"image/png\" href=\"./favicon.png\" />\n+\n+    <link\n+  href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\"\n+  rel=\"stylesheet\"\n+/>\n     <link rel=\"stylesheet\" type=\"text/css\" href=\"./style.css\" />\n   </head>\n   <body>\n     <header>\n"
+                },
+                {
+                    "date": 1750110977443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,8 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n     <title>Arnaud's Coffee Shop</title>\n     <link rel=\"icon\" type=\"image/png\" href=\"./favicon.png\" />\n \n-    <link\n-      href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\"\n-      rel=\"stylesheet\"\n-    />\n     <link rel=\"stylesheet\" type=\"text/css\" href=\"./style.css\" />\n   </head>\n   <body>\n     <header>\n"
+                },
+                {
+                    "date": 1750111786082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,11 @@\n       </p>\n \n       <nav aria-label=\"Main navigation\">\n         <ul>\n+          <li><a href=\"/\" class=\"logo\">\n+          <img src=\"logo.png\" alt=\"My Website Logo\" class=\"logo__image\" />\n+        </a></li>\n           <li><a href=\"index.html\" aria-current=\"page\">Home</a></li>\n           <li><a href=\"about.html\">About us</a></li>\n           <li><a href=\"contact.html\">Contact</a></li>\n         </ul>\n"
+                }
+            ],
+            "date": 1750106982102,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Arnaud's Coffee Shop</title>\n\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"./style.css\" />\n  </head>\n  <body>\n    <header>\n      <p>☕️logo</p>\n      <nav aria-label=\"Main navigation\">\n        <ul>\n          <li><a href=\"index.html\" aria-current=\"page\">Home</a></li>\n          <li><a href=\"about.html\">About us</a></li>\n          <li><a href=\"contact.html\">Contact</a></li>\n        </ul>\n      </nav>\n\n      <h1>Arnaud's Coffee Shop</h1>\n\n      <p>We're a small coffee shop located in Achim, Austria.</p>\n      <p>\n        We pride ourselves on offering a wide variety of high-quality coffee\n        beans and exceptional brewing methods.\n      </p>\n    </header>\n\n    <main>\n      <section>\n        <div>\n          <img\n            src=\"./coffee-shop.jpg\"\n            width=\"100%\"\n            alt=\"Photo by Viktoria Alipatova: https://www.pexels.com/photo/person-sitting-near-table-with-teacups-and-plates-2074130/\"\n          />\n        </div>\n      </section>\n    </main>\n\n    <footer>\n      <p>© 2025 Arnaud's Coffee Shop</p>\n    </footer>\n  </body>\n</html>\n"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "sourceFile": "about.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1750106337951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750106777884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,18 +38,13 @@\n         </p>\n       </section>\n \n       <section>\n-        <figure>\n-          <img\n-            src=\"./about-us.jpg\"\n-            width=\"100%\"\n-            alt=\"Woman holding mug of cappuccino\"\n-          />\n-          <figcaption>\n-            Photo by Porapak Apichodilok on Pexels\n-          </figcaption>\n-        </figure>\n+        <img\n+          src=\"./about-us.jpg\"\n+          width=\"100%\"\n+          alt=\"Woman holding mug of cappuccino\"\n+        />\n       </section>\n     </main>\n     <footer>\n       <p>© 2025 Arnaud's Coffee Shop</p>\n"
+                },
+                {
+                    "date": 1750106883576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n           carefully selecting our beans to perfecting each brew.\n         </p>\n       </section>\n \n-      <section>\n+      <section class=\"about-image\">\n         <img\n           src=\"./about-us.jpg\"\n           width=\"100%\"\n           alt=\"Woman holding mug of cappuccino\"\n"
+                },
+                {
+                    "date": 1750107320916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,11 +21,11 @@\n       <p class=\"subtitle\">Where Quality Meets Every Sip!</p>\n     </header>\n \n     <main>\n-      <section aria-labelledby=\"about-intro\">\n-        <h2 id=\"about-intro\" class=\"visually-hidden\">Our Story</h2>\n-        <p>\n+      <section class=\"about-info\" aria-labelledby=\"about-intro\">\n+        <h2 id=\"about-intro\" class=\"about-info__title\">Our Story</h2>\n+        <p class=\"about-info__text\">\n           Founded in 2019, Arnaud's Coffee Shop has quickly become a beloved\n           spot for coffee enthusiasts.\n         </p>\n         <p>\n"
+                },
+                {
+                    "date": 1750107361605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,13 +27,13 @@\n         <p class=\"about-info__text\">\n           Founded in 2019, Arnaud's Coffee Shop has quickly become a beloved\n           spot for coffee enthusiasts.\n         </p>\n-        <p>\n+        <p class=\"about-info__text\">\n           Our mission is to bring high-quality, sustainably sourced coffee to\n           our community while fostering a warm and inviting atmosphere.\n         </p>\n-        <p>\n+        <p class=\"about-info__text\">\n           What makes us special is our commitment to craftsmanship, from\n           carefully selecting our beans to perfecting each brew.\n         </p>\n       </section>\n"
+                },
+                {
+                    "date": 1750110611785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n   <head>\n     <meta charset=\"UTF-8\" />\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n     <title>Arnaud's Coffee Shop</title>\n+    <link rel=\"icon\" type=\"image/png\" href=\"./favicon.png\" />\n     <link rel=\"stylesheet\" type=\"text/css\" href=\"./style.css\" />\n   </head>\n   <body>\n     <header>\n"
+                },
+                {
+                    "date": 1750110681581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,13 @@\n     <link rel=\"stylesheet\" type=\"text/css\" href=\"./style.css\" />\n   </head>\n   <body>\n     <header>\n-      <p>☕️logo</p>\n+      <p>\n+        <a href=\"/\" class=\"logo\">\n+          <img src=\"logo.png\" alt=\"Meine Website Logo\" class=\"logo__image\" />\n+        </a>\n+      </p>\n       <nav aria-label=\"Main navigation\">\n         <ul>\n           <li><a href=\"index.html\">Home</a></li>\n           <li><a href=\"about.html\" aria-current=\"page\">About us</a></li>\n"
+                },
+                {
+                    "date": 1750110708690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   <body>\n     <header>\n       <p>\n         <a href=\"/\" class=\"logo\">\n-          <img src=\"logo.png\" alt=\"Meine Website Logo\" class=\"logo__image\" />\n+          <img src=\"logo.png\" alt=\"My Website Logo\" class=\"logo__image\" />\n         </a>\n       </p>\n       <nav aria-label=\"Main navigation\">\n         <ul>\n"
+                },
+                {
+                    "date": 1750110865920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,13 @@\n     <meta charset=\"UTF-8\" />\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n     <title>Arnaud's Coffee Shop</title>\n     <link rel=\"icon\" type=\"image/png\" href=\"./favicon.png\" />\n+\n+    <link\n+  href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\"\n+  rel=\"stylesheet\"\n+/>\n     <link rel=\"stylesheet\" type=\"text/css\" href=\"./style.css\" />\n   </head>\n   <body>\n     <header>\n"
+                },
+                {
+                    "date": 1750110971906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,8 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n     <title>Arnaud's Coffee Shop</title>\n     <link rel=\"icon\" type=\"image/png\" href=\"./favicon.png\" />\n \n-    <link\n-  href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\"\n-  rel=\"stylesheet\"\n-/>\n     <link rel=\"stylesheet\" type=\"text/css\" href=\"./style.css\" />\n   </head>\n   <body>\n     <header>\n"
+                },
+                {
+                    "date": 1750111958000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,15 +9,16 @@\n     <link rel=\"stylesheet\" type=\"text/css\" href=\"./style.css\" />\n   </head>\n   <body>\n     <header>\n-      <p>\n-        <a href=\"/\" class=\"logo\">\n-          <img src=\"logo.png\" alt=\"My Website Logo\" class=\"logo__image\" />\n-        </a>\n-      </p>\n+\n       <nav aria-label=\"Main navigation\">\n         <ul>\n+           <li>\n+            <a href=\"/\" class=\"logo\">\n+              <img src=\"logo.png\" alt=\"My Website Logo\" class=\"logo__image\" />\n+            </a>\n+          </li>\n           <li><a href=\"index.html\">Home</a></li>\n           <li><a href=\"about.html\" aria-current=\"page\">About us</a></li>\n           <li><a href=\"contact.html\">Contact</a></li>\n         </ul>\n"
+                }
+            ],
+            "date": 1750106337951,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Arnaud's Coffee Shop</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"./style.css\" />\n  </head>\n  <body>\n    <header>\n      <p>☕️logo</p>\n      <nav aria-label=\"Main navigation\">\n        <ul>\n          <li><a href=\"index.html\">Home</a></li>\n          <li><a href=\"about.html\" aria-current=\"page\">About us</a></li>\n          <li><a href=\"contact.html\">Contact</a></li>\n        </ul>\n      </nav>\n\n      <h1>About Arnaud's Coffee Shop</h1>\n      <p class=\"subtitle\">Where Quality Meets Every Sip!</p>\n    </header>\n\n    <main>\n      <section aria-labelledby=\"about-intro\">\n        <h2 id=\"about-intro\" class=\"visually-hidden\">Our Story</h2>\n        <p>\n          Founded in 2019, Arnaud's Coffee Shop has quickly become a beloved\n          spot for coffee enthusiasts.\n        </p>\n        <p>\n          Our mission is to bring high-quality, sustainably sourced coffee to\n          our community while fostering a warm and inviting atmosphere.\n        </p>\n        <p>\n          What makes us special is our commitment to craftsmanship, from\n          carefully selecting our beans to perfecting each brew.\n        </p>\n      </section>\n\n      <section>\n        <figure>\n          <img\n            src=\"./about-us.jpg\"\n            width=\"100%\"\n            alt=\"Woman holding mug of cappuccino\"\n          />\n          <figcaption>\n            Photo by Porapak Apichodilok on Pexels\n          </figcaption>\n        </figure>\n      </section>\n    </main>\n    <footer>\n      <p>© 2025 Arnaud's Coffee Shop</p>\n    </footer>\n  </body>\n</html>\n"
+        }
+    ]
+}

@@ -1,0 +1,170 @@
+{
+    "sourceFile": "style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 38,
+            "patches": [
+                {
+                    "date": 1750096236316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750096459992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n }\n .form-group {\n   margin: 1rem;\n   display: grid;\n-  grid-template-columns: 1fr 1fr;\n+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));\n }\n .contact__label {\n   display: inline-block;\n   width: 7rem;\n"
+                },
+                {
+                    "date": 1750096540568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,70 @@\n+* {\n+  margin: 0;\n+  padding: 0;\n+  box-sizing: border-box;\n+  outline: 1px solid black;\n+}\n+\n+body {\n+  background-color: #b8843b;\n+  background-image: url(\"https://transparenttextures.com/patterns/crossword.png\");\n+  font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n+    Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n+}\n+\n+header ul {\n+  display: flex;\n+  list-style: none;\n+}\n+header li {\n+  margin-right: 1rem;\n+}\n+\n+header p {\n+  font-size: 2rem;\n+  text-align: center;\n+}\n+\n+header nav ul {\n+  display: flex;\n+  justify-content: space-around;\n+  padding: 1rem;\n+}\n+header nav a {\n+  text-decoration: none;\n+}\n+\n+header nav a:hover {\n+  text-decoration: underline;\n+  color: white;\n+}\n+h1 {\n+  text-align: center;\n+  margin: 2rem;\n+  letter-spacing: 2px;\n+  font-weight: 400;\n+  color: white;\n+}\n+\n+p {\n+  max-width: 90%;\n+  margin: 0 2rem;\n+  line-height: 1.5;\n+  color: rgb(153, 146, 146);\n+}\n+\n+.contact {\n+}\n+\n+.contact__form {\n+  display: flex;\n+\n+  justify-content: center;\n+  align-items: center;\n+  flex-direction: column;\n+}\n+.form-group {\n+  margin: 1rem;\n+  display: grid;\n+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));\n+}\n"
+                },
+                {
+                    "date": 1750096608025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,5 +66,6 @@\n .form-group {\n   margin: 1rem;\n   display: grid;\n   grid-template-columns: repeat(auto-fill, minmax(300px, auto));\n+  1fr 1fr\n }\n"
+                },
+                {
+                    "date": 1750096619081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,98 +65,6 @@\n }\n .form-group {\n   margin: 1rem;\n   display: grid;\n-  grid-template-columns: repeat(auto-fill, minmax(300px, auto));\n-  1fr 1fr\n+  grid-template-columns: 1fr 1fr;\n }\n-* {\n-  margin: 0;\n-  padding: 0;\n-  box-sizing: border-box;\n-  outline: 1px solid black;\n-}\n-\n-body {\n-  background-color: #b8843b;\n-  background-image: url(\"https://transparenttextures.com/patterns/crossword.png\");\n-  font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n-    Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n-}\n-\n-header ul {\n-  display: flex;\n-  list-style: none;\n-}\n-header li {\n-  margin-right: 1rem;\n-}\n-\n-header p {\n-  font-size: 2rem;\n-  text-align: center;\n-}\n-\n-header nav ul {\n-  display: flex;\n-  justify-content: space-around;\n-  padding: 1rem;\n-}\n-header nav a {\n-  text-decoration: none;\n-}\n-\n-header nav a:hover {\n-  text-decoration: underline;\n-  color: white;\n-}\n-h1 {\n-  text-align: center;\n-  margin: 2rem;\n-  letter-spacing: 2px;\n-  font-weight: 400;\n-  color: white;\n-}\n-\n-p {\n-  max-width: 90%;\n-  margin: 0 2rem;\n-  line-height: 1.5;\n-  color: rgb(153, 146, 146);\n-}\n-\n-.contact {\n-}\n-\n-.contact__form {\n-  display: flex;\n-\n-  justify-content: center;\n-  align-items: center;\n-  flex-direction: column;\n-}\n-.form-group {\n-  margin: 1rem;\n-  display: grid;\n-  grid-template-columns: repeat(auto-fill, minmax(300px, auto));\n-}\n-.contact__label {\n-  display: inline-block;\n-  width: 7rem;\n-  /* height: 3rem; */\n-}\n-\n-.contact__input {\n-  display: inline-block;\n-  width: 60vw;\n-  border: 1px solid #b8843b;\n-\n-  padding: 0.5rem;\n-\n-  font-size: 1.2rem;\n-}\n-\n-.contact__button {\n-  /* margin-left: auto; */\n-  width: 60vw;\n-  height: 2rem;\n-}\n"
+                },
+                {
+                    "date": 1750096660293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,4 +67,8 @@\n   margin: 1rem;\n   display: grid;\n   grid-template-columns: 1fr 1fr;\n }\n+\n+.form-group :last-child {\n+  grid-template-columns: 1fr;\n+}\n"
+                },
+                {
+                    "date": 1750096712877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n   justify-content: center;\n   align-items: center;\n   flex-direction: column;\n }\n-.form-group {\n+.contact__form {\n   margin: 1rem;\n   display: grid;\n   grid-template-columns: 1fr 1fr;\n }\n"
+                },
+                {
+                    "date": 1750096722280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n }\n .contact__form {\n   margin: 1rem;\n   display: grid;\n-  grid-template-columns: 1fr 1fr;\n+  grid-template-columns:  1fr;\n }\n \n .form-group :last-child {\n   grid-template-columns: 1fr;\n"
+                },
+                {
+                    "date": 1750096778604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,74 @@\n+* {\n+  margin: 0;\n+  padding: 0;\n+  box-sizing: border-box;\n+  outline: 1px solid black;\n+}\n+\n+body {\n+  background-color: #b8843b;\n+  background-image: url(\"https://transparenttextures.com/patterns/crossword.png\");\n+  font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n+    Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n+}\n+\n+header ul {\n+  display: flex;\n+  list-style: none;\n+}\n+header li {\n+  margin-right: 1rem;\n+}\n+\n+header p {\n+  font-size: 2rem;\n+  text-align: center;\n+}\n+\n+header nav ul {\n+  display: flex;\n+  justify-content: space-around;\n+  padding: 1rem;\n+}\n+header nav a {\n+  text-decoration: none;\n+}\n+\n+header nav a:hover {\n+  text-decoration: underline;\n+  color: white;\n+}\n+h1 {\n+  text-align: center;\n+  margin: 2rem;\n+  letter-spacing: 2px;\n+  font-weight: 400;\n+  color: white;\n+}\n+\n+p {\n+  max-width: 90%;\n+  margin: 0 2rem;\n+  line-height: 1.5;\n+  color: rgb(153, 146, 146);\n+}\n+\n+.contact {\n+}\n+\n+.contact__form {\n+  display: flex;\n+\n+  justify-content: center;\n+  align-items: center;\n+  flex-direction: column;\n+}\n+.contact__form {\n+  margin: 1rem;\n+  display: grid;\n+  grid-template-columns: 1fr;\n+}\n+\n+.form-group :last-child {\n+  grid-row: span 2;\n+}\n"
+                },
+                {
+                    "date": 1750096867048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,80 @@\n+* {\n+  margin: 0;\n+  padding: 0;\n+  box-sizing: border-box;\n+  outline: 1px solid black;\n+}\n+\n+body {\n+  background-color: #b8843b;\n+  background-image: url(\"https://transparenttextures.com/patterns/crossword.png\");\n+  font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n+    Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n+}\n+\n+header ul {\n+  display: flex;\n+  list-style: none;\n+}\n+header li {\n+  margin-right: 1rem;\n+}\n+\n+header p {\n+  font-size: 2rem;\n+  text-align: center;\n+}\n+\n+header nav ul {\n+  display: flex;\n+  justify-content: space-around;\n+  padding: 1rem;\n+}\n+header nav a {\n+  text-decoration: none;\n+}\n+\n+header nav a:hover {\n+  text-decoration: underline;\n+  color: white;\n+}\n+h1 {\n+  text-align: center;\n+  margin: 2rem;\n+  letter-spacing: 2px;\n+  font-weight: 400;\n+  color: white;\n+}\n+\n+p {\n+  max-width: 90%;\n+  margin: 0 2rem;\n+  line-height: 1.5;\n+  color: rgb(153, 146, 146);\n+}\n+\n+.contact {\n+}\n+\n+.contact__form {\n+  display: flex;\n+\n+  justify-content: center;\n+  align-items: center;\n+  flex-direction: column;\n+}\n+.contact__form {\n+  margin: 1rem;\n+  display: grid;\n+  grid-template-columns: 1fr;\n+}\n+\n+.form-group {\n+  display: flex;\n+  justify-content: start;\n+  align-items: center;\n+  flex-direction: row;\n+}\n+.form-group :last-child {\n+  grid-row: span 2;\n+}\n"
+                },
+                {
+                    "date": 1750096901529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,8 +65,9 @@\n }\n .contact__form {\n   margin: 1rem;\n   display: grid;\n+  place-content: center;\n   grid-template-columns: 1fr;\n }\n \n .form-group {\n"
+                },
+                {
+                    "date": 1750096930449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n * {\n   margin: 0;\n   padding: 0;\n   box-sizing: border-box;\n-  outline: 1px solid black;\n+  /* outline: 1px solid black; */\n }\n \n body {\n   background-color: #b8843b;\n@@ -78,152 +78,4 @@\n }\n .form-group :last-child {\n   grid-row: span 2;\n }\n-* {\n-  margin: 0;\n-  padding: 0;\n-  box-sizing: border-box;\n-  outline: 1px solid black;\n-}\n-\n-body {\n-  background-color: #b8843b;\n-  background-image: url(\"https://transparenttextures.com/patterns/crossword.png\");\n-  font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n-    Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n-}\n-\n-header ul {\n-  display: flex;\n-  list-style: none;\n-}\n-header li {\n-  margin-right: 1rem;\n-}\n-\n-header p {\n-  font-size: 2rem;\n-  text-align: center;\n-}\n-\n-header nav ul {\n-  display: flex;\n-  justify-content: space-around;\n-  padding: 1rem;\n-}\n-header nav a {\n-  text-decoration: none;\n-}\n-\n-header nav a:hover {\n-  text-decoration: underline;\n-  color: white;\n-}\n-h1 {\n-  text-align: center;\n-  margin: 2rem;\n-  letter-spacing: 2px;\n-  font-weight: 400;\n-  color: white;\n-}\n-\n-p {\n-  max-width: 90%;\n-  margin: 0 2rem;\n-  line-height: 1.5;\n-  color: rgb(153, 146, 146);\n-}\n-\n-.contact {\n-}\n-\n-.contact__form {\n-  display: flex;\n-\n-  justify-content: center;\n-  align-items: center;\n-  flex-direction: column;\n-}\n-.contact__form {\n-  margin: 1rem;\n-  display: grid;\n-  grid-template-columns: 1fr;\n-}\n-\n-.form-group :last-child {\n-  grid-row: span 2;\n-}\n-* {\n-  margin: 0;\n-  padding: 0;\n-  box-sizing: border-box;\n-  outline: 1px solid black;\n-}\n-\n-body {\n-  background-color: #b8843b;\n-  background-image: url(\"https://transparenttextures.com/patterns/crossword.png\");\n-  font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n-    Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n-}\n-\n-header ul {\n-  display: flex;\n-  list-style: none;\n-}\n-header li {\n-  margin-right: 1rem;\n-}\n-\n-header p {\n-  font-size: 2rem;\n-  text-align: center;\n-}\n-\n-header nav ul {\n-  display: flex;\n-  justify-content: space-around;\n-  padding: 1rem;\n-}\n-header nav a {\n-  text-decoration: none;\n-}\n-\n-header nav a:hover {\n-  text-decoration: underline;\n-  color: white;\n-}\n-h1 {\n-  text-align: center;\n-  margin: 2rem;\n-  letter-spacing: 2px;\n-  font-weight: 400;\n-  color: white;\n-}\n-\n-p {\n-  max-width: 90%;\n-  margin: 0 2rem;\n-  line-height: 1.5;\n-  color: rgb(153, 146, 146);\n-}\n-\n-.contact {\n-}\n-\n-.contact__form {\n-  display: flex;\n-\n-  justify-content: center;\n-  align-items: center;\n-  flex-direction: column;\n-}\n-.contact__form {\n-  margin: 1rem;\n-  display: grid;\n-  grid-template-columns:  1fr;\n-}\n-\n-.form-group :last-child {\n-  grid-template-columns: 1fr;\n-}\n"
+                },
+                {
+                    "date": 1750097079537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,20 +56,15 @@\n .contact {\n }\n \n .contact__form {\n+  margin: 1rem;\n   display: flex;\n \n   justify-content: center;\n   align-items: center;\n-  flex-direction: column;\n+  flex-direction: rows;\n }\n-.contact__form {\n-  margin: 1rem;\n-  display: grid;\n-  place-content: center;\n-  grid-template-columns: 1fr;\n-}\n \n .form-group {\n   display: flex;\n   justify-content: start;\n"
+                },
+                {
+                    "date": 1750097104359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,16 +61,17 @@\n   display: flex;\n \n   justify-content: center;\n   align-items: center;\n-  flex-direction: rows;\n+  flex-direction: column;\n }\n \n .form-group {\n   display: flex;\n-  justify-content: start;\n+\n+  justify-content: center;\n   align-items: center;\n-  flex-direction: row;\n+  flex-direction: rows;\n }\n .form-group :last-child {\n   grid-row: span 2;\n }\n"
+                },
+                {
+                    "date": 1750097140478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,13 +57,11 @@\n }\n \n .contact__form {\n   margin: 1rem;\n-  display: flex;\n+  display: grid;\n \n-  justify-content: center;\n-  align-items: center;\n-  flex-direction: column;\n+  grid-template-columns: repeat(2, 1fr);\n }\n \n .form-group {\n   display: flex;\n"
+                },
+                {
+                    "date": 1750097176981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,75 @@\n+* {\n+  margin: 0;\n+  padding: 0;\n+  box-sizing: border-box;\n+  /* outline: 1px solid black; */\n+}\n+\n+body {\n+  background-color: #b8843b;\n+  background-image: url(\"https://transparenttextures.com/patterns/crossword.png\");\n+  font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n+    Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n+}\n+\n+header ul {\n+  display: flex;\n+  list-style: none;\n+}\n+header li {\n+  margin-right: 1rem;\n+}\n+\n+header p {\n+  font-size: 2rem;\n+  text-align: center;\n+}\n+\n+header nav ul {\n+  display: flex;\n+  justify-content: space-around;\n+  padding: 1rem;\n+}\n+header nav a {\n+  text-decoration: none;\n+}\n+\n+header nav a:hover {\n+  text-decoration: underline;\n+  color: white;\n+}\n+h1 {\n+  text-align: center;\n+  margin: 2rem;\n+  letter-spacing: 2px;\n+  font-weight: 400;\n+  color: white;\n+}\n+\n+p {\n+  max-width: 90%;\n+  margin: 0 2rem;\n+  line-height: 1.5;\n+  color: rgb(153, 146, 146);\n+}\n+\n+.contact {\n+}\n+\n+.contact__form {\n+  margin: 1rem;\n+  display: grid;\n+\n+  grid-template-columns: 1fr 1fr;\n+}\n+\n+.form-group {\n+  display: flex;\n+\n+  justify-content: center;\n+  align-items: center;\n+  flex-direction: rows;\n+}\n+.form-group :last-child {\n+  grid-row: span 2;\n+}\n"
+                },
+                {
+                    "date": 1750097242118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n .contact__form {\n   margin: 1rem;\n   display: grid;\n \n-  grid-template-columns: 1fr 1fr;\n+  grid-template-columns: 1fr;\n }\n \n .form-group {\n   display: flex;\n"
+                },
+                {
+                    "date": 1750097305879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,9 @@\n   margin: 1rem;\n   display: grid;\n \n   grid-template-columns: 1fr;\n+  width: 80vw;\n }\n \n .form-group {\n   display: flex;\n"
+                },
+                {
+                    "date": 1750097320410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n .contact__form {\n   margin: 1rem;\n   display: grid;\n \n-  grid-template-columns: 1fr;\n+  grid-template-columns: 1fr 1fr;\n   width: 80vw;\n }\n \n .form-group {\n"
+                },
+                {
+                    "date": 1750097383682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n .contact__form {\n   margin: 1rem;\n   display: grid;\n \n-  grid-template-columns: 1fr 1fr;\n+  grid-template-columns: 1fr;\n   width: 80vw;\n }\n \n .form-group {\n"
+                },
+                {
+                    "date": 1750097433243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,88 +64,11 @@\n   width: 80vw;\n }\n \n .form-group {\n-  display: flex;\n-\n-  justify-content: center;\n-  align-items: center;\n-  flex-direction: rows;\n-}\n-.form-group :last-child {\n-  grid-row: span 2;\n-}\n-* {\n-  margin: 0;\n-  padding: 0;\n-  box-sizing: border-box;\n-  /* outline: 1px solid black; */\n-}\n-\n-body {\n-  background-color: #b8843b;\n-  background-image: url(\"https://transparenttextures.com/patterns/crossword.png\");\n-  font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n-    Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n-}\n-\n-header ul {\n-  display: flex;\n-  list-style: none;\n-}\n-header li {\n-  margin-right: 1rem;\n-}\n-\n-header p {\n-  font-size: 2rem;\n-  text-align: center;\n-}\n-\n-header nav ul {\n-  display: flex;\n-  justify-content: space-around;\n-  padding: 1rem;\n-}\n-header nav a {\n-  text-decoration: none;\n-}\n-\n-header nav a:hover {\n-  text-decoration: underline;\n-  color: white;\n-}\n-h1 {\n-  text-align: center;\n-  margin: 2rem;\n-  letter-spacing: 2px;\n-  font-weight: 400;\n-  color: white;\n-}\n-\n-p {\n-  max-width: 90%;\n-  margin: 0 2rem;\n-  line-height: 1.5;\n-  color: rgb(153, 146, 146);\n-}\n-\n-.contact {\n-}\n-\n-.contact__form {\n-  margin: 1rem;\n   display: grid;\n \n-  grid-template-columns: repeat(2, 1fr);\n+  grid-template-columns: 1fr 1fr;\n }\n-\n-.form-group {\n-  display: flex;\n-\n-  justify-content: center;\n-  align-items: center;\n-  flex-direction: rows;\n-}\n .form-group :last-child {\n   grid-row: span 2;\n }\n"
+                },
+                {
+                    "date": 1750097469333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,6 +69,6 @@\n \n   grid-template-columns: 1fr 1fr;\n }\n .form-group :last-child {\n-  grid-row: span 2;\n+  grid-template-columns: 1fr;\n }\n"
+                },
+                {
+                    "date": 1750097535611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,7 +68,7 @@\n   display: grid;\n \n   grid-template-columns: 1fr 1fr;\n }\n-.form-group :last-child {\n-  grid-template-columns: 1fr;\n+.form-group :first-child {\n+  grid-row: span 1;\n }\n"
+                },
+                {
+                    "date": 1750097670121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,6 +69,6 @@\n \n   grid-template-columns: 1fr 1fr;\n }\n .form-group :first-child {\n-  grid-row: span 1;\n+  grid-row: span 2;\n }\n"
+                },
+                {
+                    "date": 1750097710661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,6 +69,6 @@\n \n   grid-template-columns: 1fr 1fr;\n }\n .form-group :first-child {\n-  grid-row: span 2;\n+  grid-column: span 2;\n }\n"
+                },
+                {
+                    "date": 1750098190473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,11 +64,13 @@\n   width: 80vw;\n }\n \n .form-group {\n-  display: grid;\n+  display: flex;\n \n-  grid-template-columns: 1fr 1fr;\n+  justify-content: center;\n+  align-items: center;\n+  flex-direction: row;\n }\n .form-group :first-child {\n   grid-column: span 2;\n }\n"
+                },
+                {
+                    "date": 1750098794168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,11 +57,9 @@\n }\n \n .contact__form {\n   margin: 1rem;\n-  display: grid;\n \n-  grid-template-columns: 1fr;\n   width: 80vw;\n }\n \n .form-group {\n"
+                },
+                {
+                    "date": 1750098939597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,10 @@\n   line-height: 1.5;\n   color: rgb(153, 146, 146);\n }\n \n-.contact {\n+.contact h2 {\n+  text-align: center;\n }\n \n .contact__form {\n   margin: 1rem;\n"
+                },
+                {
+                    "date": 1750098964233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,8 @@\n }\n \n .form-group {\n   display: flex;\n-\n   justify-content: center;\n   align-items: center;\n   flex-direction: row;\n }\n"
+                },
+                {
+                    "date": 1750099014049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,7 +68,7 @@\n   justify-content: center;\n   align-items: center;\n   flex-direction: row;\n }\n-.form-group :first-child {\n-  grid-column: span 2;\n+.contact__label {\n+  display: inline-block;\n }\n"
+                },
+                {
+                    "date": 1750099030915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,5 +70,6 @@\n   flex-direction: row;\n }\n .contact__label {\n   display: inline-block;\n+  width: 4rem;\n }\n"
+                },
+                {
+                    "date": 1750099041451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,6 +70,6 @@\n   flex-direction: row;\n }\n .contact__label {\n   display: inline-block;\n-  width: 4rem;\n+  width: 8rem;\n }\n"
+                },
+                {
+                    "date": 1750099055789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,4 +72,18 @@\n .contact__label {\n   display: inline-block;\n   width: 8rem;\n }\n+.contact__input {\n+  display: inline-block;\n+\n+  width: 100%;\n+  padding: 0.5rem;\n+\n+  border: 1px solid #ccc;\n+\n+  font-size: 1rem;\n+\n+  border-radius: 0.5rem;\n+\n+  margin-right: 0.5rem;\n+}\n"
+                },
+                {
+                    "date": 1750099083545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,14 +76,6 @@\n .contact__input {\n   display: inline-block;\n \n   width: 100%;\n-  padding: 0.5rem;\n \n-  border: 1px solid #ccc;\n-\n-  font-size: 1rem;\n-\n-  border-radius: 0.5rem;\n-\n-  margin-right: 0.5rem;\n }\n"
+                },
+                {
+                    "date": 1750099095105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,6 +76,14 @@\n .contact__input {\n   display: inline-block;\n \n   width: 100%;\n+  padding: 0.5rem;\n \n+  border: 1px solid #ccc;\n+\n+  font-size: 1rem;\n+\n+  border-radius: 0.5rem;\n+\n+  margin-right: 0.5rem;\n }\n"
+                },
+                {
+                    "date": 1750099119025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,6 +84,6 @@\n   font-size: 1rem;\n \n   border-radius: 0.5rem;\n \n-  margin-right: 0.5rem;\n+\n }\n"
+                },
+                {
+                    "date": 1750099163417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,13 @@\n .contact__form {\n   margin: 1rem;\n \n   width: 80vw;\n+\n+    display: flex;\n+  justify-content: center;\n+  align-items: center;\n+  flex-direction: column;\n }\n \n .form-group {\n   display: flex;\n"
+                },
+                {
+                    "date": 1750099172304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,8 @@\n \n   display: flex;\n   justify-content: center;\n   align-items: center;\n-  flex-direction: column;\n }\n \n .form-group {\n   display: flex;\n"
+                },
+                {
+                    "date": 1750099178393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,12 +60,8 @@\n .contact__form {\n   margin: 1rem;\n \n   width: 80vw;\n-\n-  display: flex;\n-  justify-content: center;\n-  align-items: center;\n }\n \n .form-group {\n   display: flex;\n"
+                }
+            ],
+            "date": 1750096236316,
+            "name": "Commit-0",
+            "content": "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  outline: 1px solid black;\n}\n\nbody {\n  background-color: #b8843b;\n  background-image: url(\"https://transparenttextures.com/patterns/crossword.png\");\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n    Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n}\n\nheader ul {\n  display: flex;\n  list-style: none;\n}\nheader li {\n  margin-right: 1rem;\n}\n\nheader p {\n  font-size: 2rem;\n  text-align: center;\n}\n\nheader nav ul {\n  display: flex;\n  justify-content: space-around;\n  padding: 1rem;\n}\nheader nav a {\n  text-decoration: none;\n}\n\nheader nav a:hover {\n  text-decoration: underline;\n  color: white;\n}\nh1 {\n  text-align: center;\n  margin: 2rem;\n  letter-spacing: 2px;\n  font-weight: 400;\n  color: white;\n}\n\np {\n  max-width: 90%;\n  margin: 0 2rem;\n  line-height: 1.5;\n  color: rgb(153, 146, 146);\n}\n\n.contact {\n}\n\n.contact__form {\n  display: flex;\n\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n.form-group {\n  margin: 1rem;\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}\n.contact__label {\n  display: inline-block;\n  width: 7rem;\n  /* height: 3rem; */\n}\n\n.contact__input {\n  display: inline-block;\n  width: 60vw;\n  border: 1px solid #b8843b;\n\n  padding: 0.5rem;\n\n  font-size: 1.2rem;\n}\n\n.contact__button {\n  /* margin-left: auto; */\n  width: 60vw;\n  height: 2rem;\n}\n"
+        }
+    ]
+}
